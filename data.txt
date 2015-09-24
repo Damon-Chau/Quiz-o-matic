@@ -1,0 +1,106 @@
+15
+Which of these is not a legal operator in python?
+c
+qimage1.bmp
+a) +
+b) -
+c) \
+d) /
+What is the code for a user inputted string?
+c
+qimage2.bmp
+a) INPUT
+b) Raw_input
+c) raw_input
+d) RAW_INPUT
+What does IPO stand for?
+b
+qimage3.bmp
+a) Input Progress Output
+b) Input Processing Output
+c) Input Practise Output
+d) Input Procedure Output
+If x=1 and y=5, what will be outputted:
+a
+qimage4.bmp
+a) x < y
+b) x<y
+c) x > y
+d) x>y
+What error would result if a string were to be used in an 'input' statement?
+b
+qimage5.bmp
+a) ValueError
+b) NameError
+c) Value Error
+d) Name Error
+What would be the output of the above for loop?
+c
+qimage6.bmp
+a) 0
+b) 62
+c) 112
+d) 176
+According to computer coordinates, what are the coordinates of point A?
+d
+qimage7.bmp
+a) (-3,  3)
+b) ( 3,  3)
+c) ( 3, -3)
+d) (-3, -3)
+Where does the code for colours go in this pygame template?
+a
+qimage8.bmp
+a) before Main Program Loop
+b) in Main Program Loop
+c) after Main Program Loop
+d) no where; you do not need to define colours
+In pygames, how would you make a box move vertically down the window?
+c
+qimage9.bmp
+a) animate it so that the x coordinate gets added
+b) animate it so that the y coordinate gets subtracted
+c) animate it so that the y coordinate gets added
+d) do nothing. gravity will do the work
+You are given the following line of code: greet = "Hello Bob". How would you obtain just "Hel"
+a
+qimage10.bmp
+a) greet [0:3]
+b) greet [1:3]
+c) greet [3:0]
+d) gret  [0:3]
+Why does the above code not run?
+b
+qimage11.bmp
+a) syntaxError: invalid syntax (<module1>, line5)
+b) TypeError: 'str' object does not support item assignment 
+c) All of the above
+d) None of the above
+What 3 basic steps must apply in File Processing?
+a
+qimage12.bmp
+a) Open the File, Manipulate the File, Close the File
+b) Open the File, Close the File
+c) Open the File, Manipulate the File, Write to a new File
+d) Read the File, Write to a new File, Close the File
+What is the part of the program that creates a function called?
+b
+qimage13.bmp
+a) function initiation
+b) function definition
+c) function
+d) none of the above
+What is wrong with the above code?
+d
+qimage14.bmp
+a) SyntaxError: invalid syntax (<module1>, line2)
+b) SyntaxError: invalid syntax (<module1>, line6)
+c) SyntaxError: invalid syntax (<module1>, line9)
+d) none of the above
+What is wrong with the above code?
+a
+qimage15.bmp
+a) NameError: global name 'd' is not defined
+b) NameError: global name 'dist' is not defined
+c) SyntaxError: invalid syntax (<module1>, line4)
+d) SyntaxError: invalid syntax (<module1>, line14)
