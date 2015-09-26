@@ -86,6 +86,7 @@ def load_quizList(datafilename):
 
     return qlist
 
+
 def play_game(screen, game_data, results_list):
     """
     The playable quiz. For each question in game_data,
@@ -110,13 +111,13 @@ def play_game(screen, game_data, results_list):
     score = 0
     score_update = 0
     question_state = 0
-    #pygame.font.init()
+
     while done == False:
 
-        for event in pygame.event.get(): # User did something
-            if event.type == pygame.QUIT: # If user clicked close
+        for event in pygame.event.get():  # User did something
+            if event.type == pygame.QUIT:  # If user clicked close
                 return "quit",score
-                #done = True # Flag that we are done so we exit this loop
+                # done = True # Flag that we are done so we exit this loop
 
             elif event.type == pygame.KEYUP:
                 if event.key != pygame.K_RETURN:
@@ -128,7 +129,7 @@ def play_game(screen, game_data, results_list):
 
 
         if advance_question == True:
-            #update the score and reset things for the next question
+            # update the score and reset things for the next question
             score = score + score_update
             question_index = question_index + 1
             response = ""
@@ -146,6 +147,7 @@ def play_game(screen, game_data, results_list):
     else:
         return "final",score
 
+
 def show_question_response(screen, q_data, user_response):
     """
     Shows the text for the question, options and user response to the screen
@@ -161,14 +163,14 @@ def show_question_response(screen, q_data, user_response):
     background = pygame.image.load('background1.jpg').convert()
     screen.blit(background,[0,0])
 
-    #load image
+    # load image
     image = pygame.image.load(q_data[2]).convert()
     screen.blit(image, [25,25])
 
     large_font = pygame.font.SysFont('Calibri',17,False,False)
     normal_font = pygame.font.SysFont('Calibri', 15, False, False)
 
-    #load questions
+    # load questions
     text_question = large_font.render(q_data[0],True,BLACK)
     text_option_a = normal_font.render(q_data[3],True,BLACK)
     text_option_b = normal_font.render(q_data[4],True,BLACK)
@@ -178,7 +180,7 @@ def show_question_response(screen, q_data, user_response):
 
     text_user_response = normal_font.render(user_response,True,BLACK)
 
-    #blit questions to screen
+    # blit questions to screen
     screen.blit(text_question,[20,330])
     screen.blit(text_option_a,[20,350])
     screen.blit(text_option_b,[20,370])
@@ -226,19 +228,11 @@ def show_final_results(screen, score, out_of):
         if score > 7:
             text_pass = font.render("Congratulations!!! You passed!!!",True,BLACK)
             screen.blit(text_pass,[0,0])
-            #pygame.mixer.music.load("Your_team_won.wav")
-            #pygame.mixer.music.set_endevent(pygame.constants.USEREVENT)
-            #pygame.mixer.music.play(0)
-            #pygame.mixer.stop()
             victory_sound.play()
 
         elif score <= 7:
             text_fail = font.render("You failed!!! Study harder!!!",True,BLACK)
             screen.blit(text_fail,[0,0])
-            #pygame.mixer.music.load("Your_team_lost.wav")
-            #pygame.mixer.music.set_endevent(pygame.constants.USEREVENT)
-            #pygame.mixer.music.play(0)
-            #pygame.mixer.stop()
             failed_sound.play()
 
         statement = "Your score is: "+ str(score)+ " out of "+ str(out_of)
@@ -248,6 +242,7 @@ def show_final_results(screen, score, out_of):
 
         clock.tick(20)
         pygame.display.flip()
+
 
 def main():
     """
