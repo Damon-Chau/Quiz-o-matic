@@ -102,7 +102,6 @@ def play_game(screen, game_data, results_list):
 
     """
 
-    # your code here
     done = False
     clock = pygame.time.Clock()
     question_index = 0
@@ -217,8 +216,6 @@ def show_final_results(screen, score, out_of):
                 if event.key == pygame.K_RETURN:
                     return "quit"
 
-
-        # your code here
         background = pygame.image.load('background1.jpg').convert()
         screen.blit(background,[0,0])
 
@@ -259,7 +256,7 @@ def main():
     pyscreen = pygame.display.set_mode(size)
     pygame.display.set_caption("The Game")
 
-    #initialize the game state
+    # initialize the game state
     game_state = "start"
 
     while game_state != "quit":
